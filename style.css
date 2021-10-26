@@ -1,0 +1,68 @@
+@import "header.css";
+@import "paragraph.css";
+body {
+    color:black;
+    background-color:whitesmoke;
+}
+h1 {
+    color:violet;
+}
+#myID {
+    color:purple;
+}
+.fancy-border {
+    border: 3px dashed green;
+}
+.blue-text {
+    color:blue;
+}
+ul > li {
+    color: white;
+    background-color: black;
+} 
+[title] {
+    background-color: yellowgreen;
+}
+input:focus {
+    box-shadow: 3px 3px 3px gray;
+}
+.box {
+    border: 2px solid green;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.box2 {
+    border: 2px solid blue;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+.container {
+    border: 1px solid black;
+    width: 450px;
+    height: 300px;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center   ;
+}
+@keyframes change-color{
+    0% {background-color: red; left: 30px}
+    15% {background-color: orange; left: 60px}
+    30% {background-color: yellow; left: 90px}
+    45% {background-color: green; left: 120px}
+    60% {background-color: cornflowerblue; left: 150px}
+    75% {background-color: blue; left: 180px}
+    100% {background-color: purple; left: 210px}
+}
+.box-animation {
+    position: relative;
+    animation-name: change-color;
+    animation-duration: 3.5s;
+    animation-iteration-count: infinite;
+}
